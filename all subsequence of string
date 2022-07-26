@@ -1,0 +1,18 @@
+import java.util.*;
+class recursion{
+     public static void subsequence(String str,int idx,String newString){
+         if(idx==str.length()){
+             System.out.println(newString);
+             return;
+             }
+         char currentChar=str.charAt(idx);
+         to be//
+          subsequence(str,idx+1,newString+currChar);
+         to not to be//
+          subsequence(str,idx+1,newString);
+       }
+    public static void main(String args[]){
+       int str="abc";
+       subsequence(str,0," ");
+     }
+  }
