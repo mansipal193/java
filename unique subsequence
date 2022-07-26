@@ -1,0 +1,23 @@
+import java.util.*;
+class Recursion{
+    public static void uniquesubseq(String str,int idx,String newString,HashSet<String> set){
+             if(idx=str.length()){
+                if(set.contains(newString){
+                return;
+                }
+                else{
+                   System.out.println(newString);
+                   set.add(newString);
+                   return;
+                   }
+             }
+             char currChar=str.charAt(i);
+             uniquesubseq(str,idx+1,newString+currChar,set);
+             uniquesubseq(str,idx+1,newString,set);
+    }
+    public static void main(String args[]){
+          int str="aaa";
+          HashSet<String> set=new Hashset<>();
+          uniquesubseq(str,0," ",set);
+         }
+ }    
