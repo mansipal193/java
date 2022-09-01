@@ -1,0 +1,15 @@
+public class string{
+  public static void print(String str){
+     if(str.length==0){
+       return;
+       }
+      char ch=str.charAt(0);
+      System.out.println(ch);
+      String leftout=str.substring(1);
+      print(leftout);
+      }
+      public static void main(String args[]){
+         print("java");
+        }
+        }
+      
